@@ -19,6 +19,7 @@ public class Main {
         task7();
         // Задание 8
         task8();
+
     }
 
     private static void task8() {
@@ -52,7 +53,7 @@ public class Main {
             if (" ".equals(fullName.substring(i - 1, i)))
                 correctName = correctName + fullName.substring(i, i + 1).toUpperCase();
             else
-                correctName = correctName + fullName.substring(i, i + 1);
+                correctName = correctName + fullName.charAt(i);
         }
         System.out.println("Верное написание ФИО сотрудника с заглавных букв – " + correctName);
     }
